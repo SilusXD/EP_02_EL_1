@@ -145,7 +145,10 @@ namespace EP_02_EL_1.Pages
 
         private void ButtonCancel_Click(object sender, RoutedEventArgs e)
         {
-
+            if (NavigationService.CanGoBack)
+            {
+                NavigationService.GoBack();
+            }
         }
     }
 }
